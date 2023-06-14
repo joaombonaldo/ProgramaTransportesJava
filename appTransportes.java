@@ -138,7 +138,7 @@ public class appTransportes {
             for (int i = 0; i < cidadesTransporte.length; i++){
                 System.out.println("\nDigite o número da cidade: \n" + Arrays.toStringCustom(cidades));
                 int cidadeEscolhida = teclado.nextInt();
-                if (cidadeEscolhida > 0 || cidadeEscolhida < cidades.length) {
+                if (cidadeEscolhida > 0 && cidadeEscolhida < cidades.length) {
                     cidadesTransporte[i] = cidades[cidadeEscolhida];
                 } else {
                     System.out.println("Cidade inválida! Digite novamente.");
